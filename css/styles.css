@@ -1,0 +1,143 @@
+/* Get Weather Icons*/
+
+@ import: url("https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css");
+
+
+/* My Styles */
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+     
+}
+
+body p { 
+    font-size: 1.3em;
+    letter-spacing: .1em;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: 'Roboto Slab', serif;
+    padding-left: .8em;
+    padding-right: .8em;
+
+}
+
+h2{
+     text-align: center;
+    font-family: 'Roboto Slab', serif;
+    letter-spacing: .2em;
+    font-size: 4em;
+    color: lightslategray;
+    
+}
+
+button {
+    width: 50%;
+    padding-top: .9em;
+    padding-bottom: .9em;
+    text-transform: capitalize;
+    color: lightgrey;
+    background-color: aliceblue;
+
+}
+
+button:hover {
+   color: lightgrey;
+   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.1), 0 17px 50px 0 rgba(0,0,0,0.10);
+    background-color: ghostwhite;
+    
+    
+}
+
+/* flexbox */
+main {
+    font-family: font-family: 'Montserrat', sans-serif;
+    font-size: 1.3em;
+    letter-spacing: .06em;
+    background: white;
+    margin: .1em;
+    padding-left: 5em;
+    padding-right: 5em;
+    display:flex;    
+    flex-flow: row wrap;
+    text-transform: uppercase;
+    color: aliceblue;
+    text-align: center;
+    text-emphasis: bold;
+    
+}
+
+
+
+section {
+    background: tomato;
+    padding: 1em;
+    margin: 2em;
+    border-radius: 5%;
+   
+    
+/*  flexbox as child  */
+
+    flex: 1 0 400px;
+    
+    
+/*  flexbox as parent  */
+    
+    
+}
+
+section:hover {
+    background: #ff7d66; 
+
+}
+
+
+
+
+/********************
+MEDIA QUERIES
+*******************/
+/* Desktop */
+@media screen /* 2560px = 160em */
+  and (max-width: 160em)
+  /* 1280px = 80em */
+  and (min-width: 80em) { 
+  
+  /* Diagnostic Styling. */
+  body {
+       background: white;
+  }
+
+}
+
+/* Tablet */
+@media screen 
+   /* 1279 = 79.9375em */  
+  and (max-width: 79.9375em)
+   /* 768px = 160em */
+  and (min-width: 48em)  {
+
+  /* Diagnostic Styling. */
+  body {
+       background-image: url("img/bg.jpg");
+      font-size: .75em;
+  }
+
+}
+
+/* Mobile */
+@media screen
+  /* 767px = 47.9375em */
+  and (max-width: 47.9375em)
+  /* 320px = 20em */
+  and (min-width: 1em) { 
+
+  /* Diagnostic Styling. */
+	body {
+       background: white;
+        font-size: .5em;
+    
+	}
+	
+}
